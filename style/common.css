@@ -1,0 +1,550 @@
+/*<![CDATA[*/
+
+img { border: 0; }
+.clear { clear: both; }
+
+/**********************************************************/
+.centre   { text-align: center; }
+.gauche   { text-align: left; }
+.droite   { text-align: right; }
+.justifie { text-align: justify; }
+
+/**********************************************************/
+.fgauche { float: left;  margin: 0 10px 0 0; } 
+.fdroite { float: right; margin: 0 0 0 10px; }
+
+/* Liste de d�finitions pour la mise en forme de d�tail
+     ***********************************************************************/
+    #body dl.detail {
+		margin: 0;
+		padding: 0;
+	}
+
+	#body.detail dt {
+		position: relative;
+		width: 15em;
+		font-weight: bold;
+		margin: -.5em 0;
+	}
+
+	#body.detail dd {
+		position: relative;
+		top: -0.8em;
+		margin: 0 0 0 16em;
+		padding: 0 0 0 .5em;
+		min-height: 18px;
+	}
+/* ----------------list country provider weight price ---- */
+	
+
+/* ---------------- Content --------------------- */
+#lantern{
+	color: #FF0000;
+}
+#zone-content{
+	margin: 0px 0px 0px 0px;
+	padding: 14px 8px 0px 14px;
+	position: relative;
+	float: left;
+	background-color: #ffffff;
+	width: 465px; 
+	left: 85px;
+}
+	    #zone-content table{
+	    width: 100%;
+	    background-color: #ff6600;
+	}
+	    #zone-content th{
+	    background-color: white;
+	    padding: 3px;
+	}
+	    #zone-content td{
+	    background-color: white;
+	    padding: 0px 3px 0px 3px;
+	}
+	    #zone-content td.notinstock{
+	    background-color: #ff0000;
+	    padding: 5px;
+	    color: white;
+	}
+
+#list-country-provider {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	width: 443px;
+}
+#list-country-provider-box {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	width: 443px;
+}
+#logo_provider {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	width: 201px;
+	height: 25px;
+	float: left;
+	}
+
+#zone_weight {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	width: 121px;
+	float: left;
+	
+	}
+
+#zone_price{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	width: 100px;
+	float: left;
+}
+
+#price-weight {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	width: 121px;
+	float: left;
+}
+
+	
+}
+/*link==========================================*/
+#link a {
+		text-decoration: none;
+		color: #ffffff;
+}
+#link a:hover {
+		color: #ff0000;
+		text-decoration: none;
+}
+
+/*MENU LEFT============================================================================*/
+#menu-page {
+ 	margin: 8px 11px 0px 10px;
+	padding: 1px 0px 5px 40px;
+	background-color: #cccccc ;
+	color: #00405C;
+	height: 18px; 
+}
+
+/*****************************/
+
+#list-menu-front {
+	margin: 0 19px 0 0;
+	padding: 5px 5px 5px 5px;
+	color: #ffffff;
+	position: relative;
+	float: left;
+	left: 50px;
+	width: 250px;
+	}
+#list-menu{
+	margin: 0 19px 0 0;
+	color: #ffffff;
+	position: relative;
+	float: left;
+	left: 50px;
+	width: 250px;
+	}
+#list-menu-cat{
+	background-color:#FFFFFF;
+	color:#FFFFFF;
+	left:50px;
+	margin:0 19px 0 0;
+	padding:5px;
+	width:250px;
+	}
+
+#list-menu-keyword {
+	background-color:#FFFFFF;
+	clear:left;
+	margin:15px 0 0;
+	width:260px;
+	}
+	 #menu-level10 {
+	 	margin: 8px 11px 0px 10px;
+		padding: 1px 0px 5px 40px;
+		background: url('../design/artisanat-1.jpg') no-repeat top left;
+		height: 18px; 
+	}
+	
+	#menu-level10 a {
+		text-decoration: none;
+		color: #ffffff;
+	}
+	#menu-level10 a:hover {
+		color: #ffffff;
+		text-decoration: none;
+	}
+ 	#menu-level1 {
+	 	margin: 8px 11px 0px 10px;
+		padding: 1px 0px 5px 40px;
+		background: url('../design/artisanat-1.jpg') no-repeat top left;
+		height: 18px; 
+	}
+	
+	#menu-level1 a {
+		text-decoration: none;
+		color: #ffffff;
+	}
+	#menu-level1 a:hover {
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	#menu-level12 {
+	 	margin: 8px 11px 0px 10px;
+		padding: 1px 0px 5px 40px;
+		background: url('../design/artisanat-2.jpg') no-repeat top left;
+		height: 18px; 
+	}
+	
+	#menu-level12 a {
+		text-decoration: none;
+		color: #ffffff;
+	}
+	#menu-level12 a:hover {
+		color: #ffffff;
+		text-decoration: none;
+	}
+	#menu-level13 {
+	 	margin: 8px 11px 0px 10px;
+		padding: 1px 0px 5px 40px;
+		background: url('../design/artisanat-3.jpg') no-repeat top left;
+		height: 18px; 
+	}
+	
+	#menu-level13 a {
+		text-decoration: none;
+		color: #ffffff;
+	}
+	#menu-level13 a:hover {
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+ 	#menu-level2 {
+	 	margin: 1px 0px 0px 50px;
+		padding: 0px 0px 0px 0px;
+		font-size: 0.8em;
+	}
+	
+	#menu-level2 a {
+		text-decoration: none;
+		color: #ff6600;
+	}
+	#menu-level2 a:hover {
+		color: #ff0000;
+		text-decoration: none;
+	}
+ 	#menu-level14 {
+	 	margin: 8px 11px 0px 10px;
+		padding: 1px 0px 5px 40px;
+		background: url('../design/artisanat-1.jpg') no-repeat top left;
+		height: 18px; 
+	}
+	
+ 	.selected_link{
+	cursor:default; 
+	font-size:1.03em; 
+	font-weight:bold; 
+	color:#FF6600;
+	}
+	 #menu-leveln {
+	 	margin: 1px 0px 0px 50px;
+		padding: 0px 0px 0px 0px;
+		font-size: 0.8em;
+		color:#FF6600;
+	}
+	#menu-leveln a{
+	text-decoration: none;
+	color:#FF6600;
+	}
+/*List ============================================================================*/
+#detail-list {
+	margin: 0px 0px 0px 0px;
+	background-color: #ffffff;
+	padding: 0px 15px 15px 0px;
+	float: left;
+	width: 463px;
+	height: 60px;
+	}
+	
+ #list-content {
+	margin: 0px 0px 0px 0px;	
+	padding: 0px 0px 0px 0px;
+	position: absolute; 
+	float: left;
+	width: 473px;
+	top: 173px;
+	left: 390px;
+	}
+	
+#text-element-list {
+	margin: 0px 0px 0px 0px;
+	background: #FF6600;
+	float: left;
+    color: #ffffff;
+	width: 388px;
+	height: 60px;
+	padding: 0;
+	}
+	#text-element-list a {
+		text-decoration: none;
+		color: #ffffff;
+	}
+	#text-element-list a:hover {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+
+#top-text-element-list {
+	margin: 0px 0px 0px 0px;
+	padding: 3px 0px 0px 5px;
+	float: left;
+    font-size: 0.9em;
+	width: 363px;
+	height: 16px;
+	}
+	
+#left-text-element-list {
+	margin: 0px 0px 0px 0px;
+	padding: 1px 0px 0px 5px;
+	float: left;
+    font-size: 0.9em;
+	width: 80px;
+	height: 40px;
+	}
+	
+#right-text-element-list {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	float: left;
+    font-size: 0.8em;
+	width: 280px;
+	height: 41px;
+	}
+
+
+#left-image-list {
+	vertical-align: middle;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	background-color: #ffffff;
+	float: left;
+	width: 60px;
+	height: 60px;
+	padding: 0px 15px 0px 0px;
+	}	
+
+
+	
+/* ---------------------- Content Detail ------------------ */
+
+#left-text-content {	
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: #ffffff;
+    font-size: 1em;
+	color: #00405c;
+	float: left;
+	width: 215px;
+	min-height: 378px;
+	}
+#left-text-content #element-main-photo{
+ 	text-align:center;
+}
+#left-text-content input {
+	/* margin: 3px 0px 0px 0px;
+	height: 18px; */
+	padding: 0px 2px 0px 0px;
+	margin:5px 1px;
+	height:19px;
+	text-align: left;	
+	}
+#picture-element-content_pic {
+	padding: 0px 27px 10px 0px;
+	width: 205px;
+	height:auto ;
+	float: left;
+	text-align: center;
+	}
+	
+#picture-element-content {
+	padding: 8px 8px 8px 14px;
+	width: 465px;
+	position: relative;
+	left: -14px;
+	float: left;
+	font-weight: bold;
+	}
+	
+#noborder {
+	overflow: auto;
+}
+
+#list-element-detail {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	float: left;
+    color: #ffffff;
+	width: 434px;
+}
+
+#right-text-content-under {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: #FF6600;
+	position: relative;
+	float: left;
+	left: 15px;
+    color: #ffffff;
+	width: 203px;
+	height: 368px;
+	}
+	
+#right-text-content {
+	margin: 0px 0px 0px 0px;
+	padding: 10px 10px 0px 10px;
+	position: relative;
+	float: left;
+	background: url('../design/footer.jpg') no-repeat bottom left;
+    font-size: 0.8em;
+	width: 183px;
+	height: 368px;
+	}
+
+#right-text-content-bottom {
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 10px;
+    font-size: 1.1em;
+	width: 165px;
+	}
+
+/************List cart*******************************************************/
+#list-cart {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 15px 15px;
+	position: absolute; 
+	float: left;
+	background-color: #FF6600;
+	font-weight: bold;
+	width: 473px; 
+	top: 173px;
+	left: 390px;
+	}
+
+#list-cart-detail-header {
+	margin: 0px 0px 1px 0px;
+	padding: 15px 0px 15px 30px;	
+	float: left;
+	background-color: #ffffff;
+	font-weight: bold;
+	width: 428px; 
+	height: 5px;
+	}
+	
+#list-cart-detail {
+	margin: 0px 0px 20px 0px;
+	padding: 15px 0px 15px 30px;	
+	float: left;
+	background-color: #ffffff;
+	font-weight: bold;
+	width: 428px; 
+	}
+	
+#text-cart {
+	font-size: 1.2em;
+    color: #FFffff;
+	margin: -8px 0px 1px -20px;
+	padding: 0px 0px 0px 0px;
+	background: #ff6600;
+	float: left;
+	left:0px;
+	width: 300px;
+	}
+
+#text-cart-price {
+	font-size: 1.2em;
+    color: #FFffff;
+	margin: 0px 0px 0px 0px;
+	padding: 1px 1px 1px 1px;
+	position: absolute; 
+	background: #FF6600;	
+	float: left;	
+	width: 300px;
+	}
+	
+/****************************************************/
+#user-shopping_cart{
+	margin: 0px 0px 0px 0px;
+	padding: 15px 8px 0px 15px;
+	position: relative;
+	float: left;	
+	width: 460px; 
+
+	}
+#user_information{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 10px 5px 5px;
+	float: left;
+	width: 100%;
+	/*border: 1px solid #FF6600;
+	border-color: #FF6600; */
+	}
+	#user_information dl.profil {
+		margin: 1em 0 0;
+		padding: 0;
+	}
+	#user_information dl.profil dt {
+		position: relative;
+		width: 8em;
+		font-weight: bold;
+		margin: -.5em 0;
+	}
+	#user_information dl.profil dd {
+		position: relative;
+		top: -0.8em;
+		margin: 0 0 0 8em;
+		padding: 0 0 0 .5em;
+	}
+	#user_information dl.profil input {
+		width: 180px;
+	}
+
+#nb_cart_activities{
+	margin: 0px 0px 0px 0px;
+	padding: 30px 100px 0px 15px;
+	position: relative;
+	float: right;	
+	width: 460px; 
+
+	}
+#nun-unuaucun-inscrit{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 100px 0px 0px;
+	position: relative;
+	float: right;	
+	width: 460px; 
+
+	}
+#user-log-lastweek{
+	margin: 0px 0px 0px 0px;
+	padding: 20px 100px 0px 0px;
+	position: relative;
+	float: right;	
+	width: 460px; 
+
+	}
+#user-log-lastmonth{
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
+	position: relative;
+	float: left;	
+	width: 400px;
+	}
+	
+/*-------------------------------------------------------*/
+/*]]>*/

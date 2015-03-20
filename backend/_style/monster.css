@@ -1,0 +1,819 @@
+@import "../../style/web-fonts.css";
+
+body {
+    font-family: Arial, Tahoma, Verdana, Sans-Serif, Khmer;
+    margin: 0 auto;
+	padding: 0;
+}	
+
+/** BODY**************************************************************/
+#body {
+	clear: left;
+	padding: 12px 10px 10px;
+	font-size: 0.8em;
+}
+	#body h1 {
+		color: #464540;
+		margin: 0 0 15px 0;
+		font-size: 1.3em;
+		font-variant: small-caps;
+	}
+	#body h5 {
+		color: #464540;
+		margin: 0 0 15px 0;
+		font-size: 1.3em;
+		font-variant: small-caps;
+		float: left;
+	}
+	#body h3 {
+		color: #719512;
+		margin: 0 0 10px 0;
+		font-size: 1.1em;
+		font-variant: small-caps;
+	}
+	#body a {
+		color: #464540;
+		text-decoration: none;
+	}
+	#body a:hover {
+	    color: #fc781c;
+		text-decoration: underline;
+	}
+
+    /* Liste de définitions pour la mise en forme de détail
+     ***********************************************************************/
+    #body dl.detail {
+		margin: 28px 0px 0px 0px;
+		padding: 0;
+	}
+
+	#body .detail dt {
+		position: relative;
+		width: 15em;
+		font-weight: bold;
+		margin: -.5em 0;
+	}
+
+	#body .detail dd {
+		position: relative;
+		top: -0.8em;
+		margin: 0 0 0 0;
+		padding: 0 0 0 16.5em;
+		min-height: 18px;
+	}
+    #body dl.detail dd a{
+	font-weight: bold;
+	color:#96BE2A;
+	}
+	#body dl.detail a:hover{
+		text-decoration:underline;
+	
+	}
+    /* Bulles d'aide
+     ***********************************************************************
+    #body form .aide {
+    	display: inline;
+    	width: 191px;
+    	z-index: 800;
+    	margin: -5px 0 0 15px;
+    	position: absolute;
+    	background: url('../_images/form_aide.gif') bottom right no-repeat;
+    }
+    #body form .aide p{
+    	margin: 0;
+    	padding: 4px 12px 4px 18px;
+    	background: url('../_images/pointer_form.gif') top right no-repeat;
+    	font-size: 0.8em;
+    	height: 24px;
+    }
+    html>body #body form .aide p{
+    	height: auto;
+    	min-height: 24px;
+    }
+
+/********************************/
+#image-lantern-owner{
+   	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 40%;
+	float: left;
+}
+
+#detail-lantern-50{
+   	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	float: left;
+	width: 60%;
+	min-width: 500px;
+}
+/**********************************/
+
+* {
+	margin: 0;
+}
+
+a       { color: black; }
+a:hover { color: black; text-decoration: none; }
+
+.cacher {
+	display: none;
+	overflow: hidden;
+	height: 1px;
+	margin-top: -1px;
+	position: absolute;
+}
+
+.impair { background: rgb(242,250,222); }
+.over   { background: #d9f09a; }
+
+.fieldset_mini {
+    width: 800px;
+}
+
+.info_doc {
+    float: left;
+    background: url('../_images/info_doc.gif') no-repeat;
+    height: 20px;
+    width: 20px;
+    display: block;
+    margin: 1px;
+}
+
+.dl_mini {
+    width: 800px;
+}
+
+.page_visible {
+    font-weight: bold;
+}
+.page_invisible {
+    font-style: italic;
+    color: silver;
+}
+
+.collapse_plus {
+    background: url('../_images/collapse.gif') no-repeat 0 2px;
+    padding: 0 0 0 20px;
+    cursor: pointer;
+}
+
+.collapse_moins {
+    background: url('../_images/collapse.gif') no-repeat 0 -18px;
+    padding: 0 0 0 20px;
+    cursor: pointer;
+}
+
+.droite { text-align: right; }
+/**********************************************************************/
+
+
+#page {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -3em; /* the bottom margin is the negative value of the footer's height */
+}
+#footer, #push {
+	height: 3em; /* .push must be the same height as .footer */
+}
+
+
+/** HEADER**********************************************************/
+#header {
+	padding: 4px 8px 0px 4px;
+}
+    #header #logout {
+    	float: right;
+		text-align: right;
+		font-size: 0.7em;
+	}
+		#header #logout a {
+			color: #96be2a;
+		}
+		#header #logout a:hover {
+			text-decoration: none;
+		}
+#header #title {
+		font-weight: bold;
+		font-variant: small-caps; 
+	}
+
+
+/** MENU
+***********************************************************************/
+#menu_deroulant {
+	/*background: #d0cfca no-repeat center right;*/
+	background: #BDD2FF no-repeat center right;
+	font-size: 0.7em;
+	height: 21px;
+	padding: 1px 10px 0 4px;
+	border-bottom: 1px solid #CFDEFF;
+	border-right: 1px solid #464540;
+	color: #1133AA;
+}
+	
+	#menu_deroulant a {
+		color: inherit;
+	}
+
+	#menu_deroulant ul, #menu_deroulant li {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	
+	#menu_deroulant li {
+		border-bottom: 1px solid white;
+	}
+	
+		#menu_deroulant li a {
+			display: block;
+			text-decoration: none;
+			/*color: black;*/
+			color: #1133AA;
+			padding: 4px 10px 4px 6px;
+		}
+		#menu_deroulant li a:hover {
+			/*
+			padding: 4px 10px 4px 6px;
+			background: #eeede9;*/
+			padding: 4px 10px 4px 6px;
+			background: #CFDEFF none repeat scroll 0 0;
+			color: #1133AA;
+		}
+		
+/** FIL D'ARIANE
+***********************************************************************/
+#fil {font-size: 0.7em; font-variant: normal; font-weight: bold;}
+#fil a {text-decoration: none; color: #96be2a;}
+#fil a:hover {text-decoration: underline;}
+		
+/** MESSAGE
+***********************************************************************/
+#message span {
+    float: left;
+    position: relative;
+    top: -3px;
+    background-position: 5px 0;
+    background-repeat: no-repeat;
+    padding: 7px 0 0 45px;
+    margin: 10px 0 0 20px;
+    background-color: white;
+    font-size: 0.8em;
+    text-align: left;
+	height: 25px;
+	z-index: -1;
+}
+    html>body #message span {
+        height: auto;
+        min-height: 25px;
+    }
+        #message a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #message a:hover {
+            text-decoration: underline;
+        }
+    
+    #message .erreur {
+        color: red;
+        background-image: url('../_images/erreur.png');
+    }
+        #message .erreur a { color: red; }
+    
+    #message .avert {
+        color: red;
+        background-image: url('../_images/avert.png');
+    }
+        #message .avert a { color: rgb(236, 118, 0); }
+    
+    #message .info {
+        color: red;
+        background-image: url('../_images/info.png');
+    }
+        #message .info a { color: blue; }
+
+/** ACTIONS RIGHT UP
+***********************************************************************/
+#action {float: right; padding: 0 5px 5px 5px; text-align: right; font-size: 0.7em;}
+#action a {float: left;	display: block;	width: 55px; height: 55px; margin: 0 5px 0 0; padding: 1px 1px 0px 0px;	border: 1px solid white; text-decoration: none; text-align: center; vertical-align: middle;	color: #404040;	background: white;}
+#action a:hover {padding: 0px 0px 0px 1px; border: 1px solid red; color: red;}
+
+
+	
+	/** TABLEAU
+    ***********************************************************************/	
+	#onglet_accueil {
+    	float: left;
+    	padding: 5px 0 0 5px;
+    }
+    	#onglet_accueil a {
+    		float: left;
+    		display: block;
+    		width: 95px;
+    		height: 90px;
+    		margin: 0 5px 0 0;
+    		padding: 2px;
+    		border: 1px solid silver;
+    		text-decoration: none;
+    		color: black;
+    		text-align: center;
+    		vertical-align: middle;
+    		color: #808080;
+    		background: #FEFEFE;
+    	}
+    	#onglet_accueil a:hover {
+    		padding: 3px 1px 1px 3px;
+    		border: 1px solid #96be2a;
+    		background: #edfebe;
+    		color: black;
+    	}
+	
+	/** Simulation de représentation d'une div avec les margins du front office
+	 **************************************************************************/
+	div#front-office-body {
+	    padding: 10px 207px 10px 225px;
+	    background: #e8e7e2;
+	}
+	
+	
+	/** TABLEAU
+    ***********************************************************************/	
+	#body table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+		#body table thead {
+			background: #BDD2FF;
+			color: #ff6600;
+			font-weight: bold;
+		}
+			#body table thead tr.search {
+			    background: white;
+			}
+			#body table thead td {
+				border-bottom: 1px solid #c2c1bb;
+			}
+			#body table thead a {
+				color: #ff6600;
+   			}
+
+		#body tbody {
+
+		}
+			#body table tbody td {
+			    border-bottom: 1px solid white;
+			    padding: 2px 0px 2px 3px;
+			}
+			#body table tbody tr.impair {
+			    background: #eeede9;
+			}
+			#body table tbody tr.over {
+			    background: #d9d8d2;
+			}
+			#body tbody a {
+				text-decoration: none;
+			}
+			#body tbody a.underline {
+				text-decoration: underline;
+			}
+			#body tbody a.underline:hover {
+				text-decoration: none;
+			}
+
+	/*#body table {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 0 0 10px 0;
+	}
+	
+	
+	    #body tr.header {
+			font-weight: bold;
+			background: #d9f09a;
+			height: 1.8em;
+			color: black;
+        } 
+		#body thead {
+			font-weight: bold;
+			background: #d9f09a;
+		}
+			#body thead tr {
+				height: 1.8em;
+			}
+			#body thead tr.search {
+			    background: white;
+			}
+			#body thead a {
+				color: black;
+				text-decoration: none;
+			}
+			
+		#body td {
+			border-bottom: 1px solid #bbbbbb;
+		}
+		#body tbody {
+		
+		}
+		    #body tbody tr {
+				cursor: pointer;
+			}
+			#body tbody a {
+				color: black;
+				text-decoration: none;
+			}
+			#body tbody a.underline {
+				text-decoration: underline;
+			}
+			#body tbody a.underline:hover {
+				text-decoration: none;
+			}
+			*/
+		
+    /** FORMULAIRE
+    ***********************************************************************/	
+    form {
+    
+    }
+    	form fieldset {
+    		border: none;
+    		margin: 0;
+    	    padding: 0;
+    	}
+    		form fieldset legend {
+    			font-weight: bold;
+    			font-variant: small-caps;
+    			font-size: 1.2em;
+    			color: #96be2a;
+    		}
+    	
+    	form label {
+    		cursor: pointer;
+    	}
+    
+    	form input {
+    		
+    	}
+    		form input[type=text], form input[type=password], form textarea {
+    			border: 1px solid silver;
+    			font-family: Arial, Tahoma, Verdana, Khmer;
+    			font-size: 0.9em;
+    		}
+    		form input[type=text], form input[type=password] {
+    		    padding: 1px 2px 1px 0;
+    		}
+    		
+    		form .error {
+                border-color: red;
+            }
+
+            form .loader {
+    			border: 1px solid #787878;
+            }
+            form .loader-on {
+                background: url('../_images/loader-input.gif') no-repeat right center;
+            }
+            
+    
+    		form input[type=button], 
+            form input[type=submit], 
+            form .bouton {
+    			border-width: 1px;
+    		}
+            form select {
+    			border: 1px solid silver;
+    			font-family: Arial, Tahoma, Verdana, Khmer;
+    		}
+    	
+    		form input.error {
+    			border-color: red;
+    		}
+    		
+    		form input.noborder {
+    			border: none;
+    		}
+        	
+    /* Liste de définitions pour la mise en forme de formulaire
+     ***********************************************************************/
+	dl.table-display {
+		margin: 1em 0;
+		padding: 0;
+	}
+
+	.table-display dt {
+		position: relative;
+		width: 15em;
+		margin: -.5em 0;
+		font-style: italic;
+	}
+
+	.table-display dd {
+		position: relative;
+		top: -0.9em;
+		margin: 0 0 0 16em;
+		padding: 0 0 0 .5em;
+		min-height: 1.4em;
+	}
+    dd.bouton{
+        margin-top: 10px;
+    }
+	dd.description{
+        width: 350px;
+		z-index: 1;
+    }
+    /* list language in config */
+    dl.language-list {
+		margin: 1em 0;
+		padding: 0;
+	}
+
+	.language-list dt {
+		position: relative;
+		width: 15em;
+		margin: -.5em 0;
+		font-style: italic;
+	}
+	.language-list dd {
+		position: relative;
+		top: -0.6em;
+		margin: 0 0 0 5em;
+		padding: 0 0 0 .5em;
+	}
+
+    
+    /* PAGINATION
+     ***********************************************************************/
+    #pagination {
+    
+    }
+        #pagination a {
+            color: black;
+            text-decoration: none;
+        }
+        #pagination a:hover {
+            text-decoration: underline;
+        }
+        #pagination a.current {
+            font-weight: bold;
+        }
+    
+    /* MENUBAR
+     ***********************************************************************/
+    #menubar {
+        float: left;
+        width: 100%;
+        background: url('../_images/menubar_bg.png') repeat-x bottom;
+		font-size: 0.85em;
+		margin: 0 0 5px 0;
+    }
+        #menubar ul {
+            margin: 0;
+			padding: 0 10px 0;
+            list-style: none;
+        }
+        #menubar li {
+            float: left;
+            margin: 0;
+            padding: 0;
+            background: url('../_images/menubar_right.png') no-repeat right top;
+        }
+        #menubar a {
+            display: block;
+            background: url('../_images/menubar_left.png') no-repeat left top;
+			padding: 5px 15px 4px;
+			color: #777777;
+			text-decoration: none;
+        }
+        #menubar a:hover {
+            color: #719512;
+        }
+		
+        #menubar li.selected {
+            background-image: url('../_images/menubar_right_on.png');
+            color: #719512;
+			margin-top: -2px;
+        }
+        #menubar li.selected a {
+            background-image: url('../_images/menubar_left_on.png');
+            color: #719512;
+			padding-bottom: 7px;
+        }
+
+
+/* MULTI LANGUAGE
+     ***********************************************************************/
+    #multi_language {
+        float: left;
+        width: 100%;
+        background: url('../_images/menubar_bg.png') repeat-x bottom;
+		font-size: 0.85em;
+		margin: 0 0 5px 0;
+    }
+        #multi_language ul {
+            margin: 0;
+			padding: 0 10px 0;
+            list-style: none;
+        }
+        
+        #multi_language li {
+            float: left;
+            margin: 0;
+            padding: 0;
+            background: url('../_images/menubar_right.png') no-repeat right top;
+        }
+        .create_new_version{
+            float: left;
+            margin: 2px;          
+        }
+        
+        #multi_language a {
+            display: block;
+            background: url('../_images/menubar_left.png') no-repeat left top;
+			padding: 5px 15px 4px;
+			color: #777777;
+			text-decoration: none;
+        }
+        #multi_language a:hover {
+            color: #719512;
+        }
+		
+        #multi_language li.selected {
+            background-image: url('../_images/menubar_right_on.png');
+            color: #719512;
+			margin-top: -2px;
+        }
+        #multi_language li.selected a {
+            background-image: url('../_images/menubar_left_on.png');
+            color: #719512;
+			padding-bottom: 7px;
+        }
+
+    /* INCLUDE
+     ***********************************************************************/
+    #body #include {
+        padding: 2px 0 0 0;
+       
+        
+		/*
+		float: left;
+		
+		border: 1px solid rgb(175,192,141);
+        border-top: 0;*/
+    }
+	
+	#liste_pages li{
+        margin-left: 20px;
+    }
+        #liste_pages li a {
+            text-decoration: none;
+        }
+        #liste_pages li a:hover {
+            text-decoration: underline;
+        }
+	
+/** FOOTER
+***********************************************************************/
+#footer {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+    #footer a {
+        color: black;
+        text-decoration: none;
+    }
+    #footer a:hover {
+        text-decoration: underline;
+    }
+    
+    #footer textarea {
+        font-family: Tahoma, Verdana, Arial;
+        font-size: 0.6em:
+    }
+    #footer .bouton {
+		background-color: #d9f09a;
+		border-width: 1px;
+	}
+	
+	#footer #reporting_msg {
+        margin-top: 5px;
+    }
+
+#footer_nav {
+    font-size: 1em;
+    color: #ff6600;
+    text-align: center;
+    height: 10px;
+    clear: both;
+}
+
+#reporting_form {
+    text-align: center;
+}
+    #reporting_form p {
+        color: #ff6600;
+        font-size: 1em;
+    }
+.multi-tree{
+	margin: 10px;
+}
+#form-ligne {min-height: 39px; clear: both; position: relative; padding: 8px 0px 0px 0px ; width: 100%; color: #464540; font-weight: bold; font-size: 1em; /*border: 1px solid red*/}
+#form-titre {float: left; background: #; padding: 0 10px 0 0; width: 15%; height: auto; color: #464540; font-weight: bold; font-size: 1em; text-align: right; /*border: 1px solid red*/}
+#form-field {float: left; background: #; padding: 0 10px 0 0;  width: 35%; height: auto; color: #464540; font-weight: bold; font-size: 1em; /*border: 1px solid red*/}
+#form-explain {float: left; background: #; padding: 2px; width: 50%; height: auto; color: #464540; font-size: 0.8em; background-color: #ffe6e4; border: 1px solid #c2c1bb;}
+#preview{
+	position:absolute;
+	border:1px solid #ccc;
+	background:#333;
+	padding:5px;
+	display:none;
+	color:#fff;
+	z-index: 999;
+}
+/********* Flexible width list **********/
+.flexible_list{margin: 5px; padding: 0px;}
+.flexible_list .flexible_list_title{float: left; margin: 0 5px 5px 0;}
+.flexible_list .flexible_list_row{clear: both;}
+.flexible_list .flexible_list_header{font-weight: bold; margin-bottom: 10px;}
+#view_photo{ margin: -120px -10px 0px; height: 150px; }
+
+#flag_img{
+	position: absolute;
+	right: 10px;
+}
+.impair-tree{
+	background-color:#EEEDE9;	
+}
+.pair-tree{
+	background-color:#FFFFFF;	
+}
+#color-dot{color: #fff; }
+/* search system */
+#name_search_loading{position:absolute; margin: -19px 0; z-index:100;}
+.loading{background: url('/design/ajax-loader.gif') no-repeat right center; width: 220px; height: 19px;}
+
+/* internal link popup in editor */
+dd.big_width {
+	margin: 0 0 0 10em;
+}
+/********************/
+
+.float-left{
+	float: left;
+}
+.list-post{
+	margin: 0 0px 0 0;
+	float: left;
+	
+}
+.list-buttontake{
+	height:90px;
+	margin:90px 30px;
+	float: left;
+}
+.list-buttontake #take{
+	width: 40px;
+}
+
+.list-search{
+	margin: 0 0 0 -30px;
+	padding: 0;
+	border: 1px;
+	border-color: #719512;
+	width:400px;
+	float:left;
+}
+.list-search #title{margin-left: 5px; }
+.list-search #search{ float:left;}
+.list-search #list{margin-left: 0px; clear: right;}
+.select-tree{
+	cursor: pointer;
+	color:#FF6600;
+	text-decoration:underline;
+}
+.select_sub{
+	text-decoration:underline;
+	cursor: pointer;
+	color:#96BE2A;
+}
+#father_page {
+	font-weight:bold;
+}
+.parent_select {color: #96BE2A; font-weight:bold;}
+#flag_img{
+	position: absolute;
+	right: 10px;
+}
+#link_page a{
+	font-weight: bold;
+	color:#96BE2A;	
+}
+#link_page a:hover{
+	text-decoration:underline;
+	color:#96BE2A;	
+}
+#create {float:left;overflow:hidden;width:600px;}
+#viwer {float:left;margin-top:20px;width:500px;}
+#viwer .text{height:22px;}
+#viwer .text_area{height:145px;overflow:scroll;}

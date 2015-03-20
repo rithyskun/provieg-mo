@@ -1,0 +1,136 @@
+.jExplorer {
+    width: 800px;
+    height: 500px;
+}
+    .jExplorer .jTreeView { 
+        float: left;
+        display: block;
+        width: 350px;
+        height: 100%;
+        border: 2px inset silver;
+        overflow-y: scroll;
+    }
+        ul.tree {
+            list-style-type: none;
+            padding: 0 0 0 0;
+        }
+        
+        ul.tree li {
+            padding: 0 0 0 18px;
+        }
+        
+        .collapsable {
+            background: url('../_images/jTreeView/collapsable.gif') no-repeat;
+        }
+        
+        .lastCollapsable {
+            background: url('../_images/jTreeView/collapsable-last.gif') no-repeat;
+        }
+        
+        .expandable {
+            background: url('../_images/jTreeView/expandable.gif') no-repeat;
+        }
+        
+        .lastExpandable {
+            background: url('../_images/jTreeView/expandable-last.gif') no-repeat;
+        }
+        
+        .item {
+            background: url('../_images/jTreeView/item.gif') no-repeat;
+        }
+        
+        .lastItem {
+            background: url('../_images/jTreeView/item-last.gif') no-repeat;
+        }
+        
+        .textFolder {
+            border: 1px solid transparent;
+            padding: 0 5px 0 2px;
+            cursor: pointer;
+        }
+        .imgFolder {
+            background: url('../_images/jTreeView/folder.gif') no-repeat left center;
+            width: 16px;
+            height: 16px;
+            float: left;
+            cursor: pointer;
+        }
+        .treeExpander {
+            width: 15px;
+            height: 15px;
+            float: left;
+            margin-left: -15px;
+            cursor: pointer;
+        }
+        .backDropOver {
+            background: url('../_images/jTreeView/backDropOver.gif') repeat-x;
+            border: 1px solid #99defd;
+            height: 16px;
+        }
+        .backOver {
+            background: url('../_images/jTreeView/backOver.gif') repeat-x;
+            border: 1px solid #d8f0fa;
+            height: 16px;
+        }
+        
+        
+        
+        
+        .jExplorer .jExplorerDroite input {
+            width: 100%;
+        }
+        
+    .jExplorer .jFile { 
+        border: 2px inset silver;
+        margin: 0 0 0 0;
+        height: 478px;
+        width: 400px;
+        overflow-y: scroll;
+    }
+    
+    
+    
+    .fileItem {
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+    
+    .fileItemOver {
+        background: url('../_images/jTreeView/backOver.gif') repeat-x;
+        border: 1px solid #d8f0fa;
+        height: 16px;
+    }
+
+
+    .jExplorer .jTrash {
+        clear: both;
+    }
+
+#dragHelper {
+    font-size: 0.8em;
+}
+
+/*
+.tArbo .tArbo_plus {
+    display: block;
+    float: left;
+    background: url('../_images/jArbo/plus.gif') no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.tArbo .tArbo_moins {
+    display: block;
+    float: left;
+    background: url('../_images/jArbo/moins.gif') no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.tArbo .tArbo_rep {
+    display: block;
+    float: left;
+    background: url('../_images/jArbo/folder.png') no-repeat;
+    width: 16px;
+    height: 16px;
+}*/

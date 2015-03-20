@@ -1,0 +1,58 @@
+AddDefaultCharset UTF-8
+SetEnv PHP_VER 5
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^provieg.com$
+RewriteRule ^(.*)   http://www.provieg.com/$1  [QSA,L,R=301]
+
+#product-detail.php
+RewriteRule ^(en|km|zh)/.*-provieg-(\d+|tester)\.html$  product-detail.php?lang=$1&id=$2 [L]
+RewriteRule ^.*-provieg-(\d+|tester)\.html$  product-detail.php?id=$1 [L]
+
+#products.php
+RewriteRule ^(en|km|zh)/products\.html$  products.php?lang=$1 [L]
+RewriteRule ^products\.html$  products.php [L]
+
+#contact-us.php
+RewriteRule ^(en|km|zh)/contact-us\.html$  contact-us.php?lang=$1 [L]
+RewriteRule ^contact-us\.html$  contact-us.php [L]
+
+#testimonials.php
+RewriteRule ^(en|km|zh)/testimonials\.html$  testimonials.php?lang=$1 [L]
+RewriteRule ^testimonials\.html$  testimonials.php [L]
+
+#how-it-works.php
+RewriteRule ^(en|km|zh)/how-it-works\.html$  how-it-works.php?lang=$1 [L]
+RewriteRule ^how-it-works\.html$  how-it-works.php [L]
+
+#index.php
+RewriteRule ^(en|km|zh)/$  index.php?lang=$1 [L]
+
+<ifModule mod_headers.c>
+# Turn on expires and set default expires to 3 days
+ExpiresActive On
+ExpiresDefault A259200
+ 
+# Set up caching on media files for 1 month
+<filesMatch ".(ico|gif|jpg|jpeg|png|flv|pdf|swf|mov|mp3|wmv|ppt|eot|svg|ttf|woff)$">
+	ExpiresDefault A2419200
+	Header append Cache-Control "public"
+</filesMatch>
+ 
+# Set up 1 day caching on commonly updated files
+<filesMatch ".(xml|txt|html|js|css)$">
+	ExpiresDefault A86400
+	Header append Cache-Control "private, must-revalidate"
+</filesMatch>
+ 
+# Force no caching for dynamic files
+<filesMatch ".(php|cgi|pl|htm)$">
+	ExpiresDefault A0
+	Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+	Header set Pragma "no-cache"
+</filesMatch>
+
+</ifModule> 
+
+
+

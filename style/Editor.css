@@ -1,0 +1,75 @@
+.editor_apercu {
+    font-family: Arial;
+    font-size: 10pt;
+    color: white;
+    padding: 0 0 0 10px;
+}
+
+/**********************************************************/
+.editor_apercu u { text-decoration: underline; }
+.editor_apercu i { font-style: italic; }
+.editor_apercu b { font-weight: bold; color: #990000; }
+
+/**********************************************************/
+.editor_apercu .centre   { text-align: center; }
+.editor_apercu .gauche   { text-align: left; }
+.editor_apercu .droite   { text-align: right; }
+.editor_apercu .justifie { text-align: justify; }
+
+/**********************************************************/
+.editor_apercu .fgauche  { float: left; margin: 0 10px -3px 0; }
+.editor_apercu .fdroite  { float: right; margin: 0 0 -3px 10px; }
+
+/**********************************************************/
+.editor_apercu h1 { 
+    font-size: 11pt;
+    font-weight: bold; 
+    margin: 0 0 0 -10px;
+}
+.editor_apercu h1 span {
+    padding: 1px 5px 1px 5px;
+    display: inline;
+} 
+.editor_apercu h2 { 
+    font-size: 12pt; 
+    font-weight: bold;
+    margin: 0 0 0 -10px;
+    color: #990000; 
+}
+.editor_apercu h3 { 
+    font-size: 11pt; 
+    margin: 0 0 0 -10px;
+    color: #990000;
+}
+
+/**********************************************************/
+.editor_apercu a { text-decoration: none; color: white; font-weight: bold; }
+.editor_apercu a:hover { text-decoration: underline; }
+
+
+.editor_apercu img { border: none; }
+
+
+.editor_apercu ul { margin: 0; }
+
+
+.editor_apercu .puce {
+    color: #FF6600;
+}
+
+
+.editor_apercu .ed_bouton {
+    background: url('/images/bouton_devis.gif') no-repeat;
+    padding-left: 24px;
+    padding-top: 1px
+    text-align: left;
+    font-weight: normal;
+    border: none;
+    color: #93e2ed;
+    height: 20px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.editor_apercu a.ed_bouton:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,128 @@
+/*
+body {
+
+    background: #da7271;
+
+    color: white;
+
+    font-family: Arial, Verdana, Tahoma;
+
+    color: white;
+
+    font-size: 10pt;
+
+    padding: 0 5px 0 10px;
+
+    margin: 0;
+
+}
+*/
+
+
+/**********************************************************/
+
+u { text-decoration: underline; }
+
+i { font-style: italic; }
+
+b { font-weight: bold;  }/*color: #990000;*/
+
+
+
+/**********************************************************/
+
+a       { text-decoration: none; color: blue; font-weight: bold; }
+
+a:hover { text-decoration: underline; }
+
+
+
+/**********************************************************/
+
+.centre   { text-align: center; }
+
+.gauche   { text-align: left; }
+
+.droite   { text-align: right; }
+
+.justifie { text-align: justify; }
+
+
+
+/**********************************************************/
+
+.fgauche { float: left;  margin: 0 10px 0 0; } 
+
+.fdroite { float: right; margin: 0 0 0 10px; }
+
+
+
+
+
+/**********************************************************/
+
+h1 { 
+    font-size: 14pt;
+    font-weight: bold; 
+    margin: 0 0 20px 0px;
+    padding: 1px 5px 1px 5px;
+    display: inline;
+   /* background-color: #FF6600; */
+}
+h2 { 
+    font-size: 13pt; 
+    font-weight: bold;
+    margin: 0 0 0 0px;
+    padding: 1px 5px 1px 5px;
+}
+h3 { 
+    font-size: 11pt; 
+    margin: 0 0 0 0px;
+    padding: 1px 5px 1px 5px;
+}
+h4 { font-size: 10px; margin: 0; }
+h5 { font-size: 8px; margin: 0; }
+h6 { font-size: 6px; margin: 0; }
+
+
+
+/**********************************************************/
+
+.puce {
+
+    color: #FF6600;
+
+}
+
+
+
+.ed_bouton {
+
+    background: url('/images/bouton_devis.gif') no-repeat;
+
+    padding-left: 24px;
+
+    padding-top: 1px
+
+    text-align: left;
+
+    font-weight: normal;
+
+    border: none;
+
+    color: #93e2ed;
+
+    height: 20px;
+
+    margin-top: 2px;
+
+    cursor: pointer;
+
+}
+
+a.ed_bouton:hover {
+
+    text-decoration: none;
+
+}
+

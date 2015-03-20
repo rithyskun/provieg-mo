@@ -1,0 +1,71 @@
+/* table filter */
+
+.sortable {
+	cursor:pointer;
+	background-image:url("../_images/tableFilter/sortable.gif");
+	background-position:center left;
+	background-repeat:no-repeat;
+	padding-left:14px;
+}
+.sorted-asc {
+	background-image:url("../_images/tableFilter/sorted_up.gif");
+	background-position:center left;
+	background-repeat:no-repeat;
+}
+.sorted-desc {
+	background-image:url("../_images/tableFilter/sorted_down.gif");
+	background-position:center left;
+	background-repeat:no-repeat;
+}
+.filtered {
+	background-image:url("../_images/tableFilter/filter.gif");
+	background-position:center left;
+	background-repeat:no-repeat;
+	padding-left:14px;
+}
+.lightSortable {
+	background-color: #cccccc;
+}
+.sorted-col {
+	/*background-color: #F0EfEf;*/
+}
+.filter {
+	font-size:smaller;
+}
+.filterRow {
+	padding-right:12px;
+}
+a {
+	cursor:pointer;
+}
+
+
+.tableFilter_menu {
+	position: absolute;
+	z-index: 100;
+	display: none;
+}
+
+.tableFilter_menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  }
+.tableFilter_menu li {
+	position: relative;
+	width : 130px;
+	padding: 2px 2px 2px 4px;
+	cursor: pointer;
+}
+.tableFilter_menu li ul {
+	display: none;
+	position: absolute; 
+	bottom: -1px;
+	left: 136px;
+  }
+.tableFilter_menu li.over > ul { 
+	display: block; 
+}
+.tableFilter_menu li.submenu td { 
+	padding-left:10px;
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Enriqueta';
+  src: url('/fonts/enriqueta-webfont.eot?#iefix') format('embedded-opentype'),  url('/fonts/enriqueta-webfont.woff') format('woff'), url('/fonts/enriqueta-webfont.ttf')  format('truetype'), url('/fonts/enriqueta-webfont.svg#Enriqueta') format('svg');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/fonts/opensans-webfont.eot?#iefix') format('embedded-opentype'),  url('/fonts/opensans-webfont.woff') format('woff'), url('/fonts/opensans-webfont.ttf')  format('truetype'), url('/fonts/opensans-webfont.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'OpenSans Light';
+  src: url('/fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),  url('/fonts/opensans-light-webfont.woff') format('woff'), url('/fonts/opensans-light-webfont.ttf')  format('truetype'), url('/fonts/opensans-light-webfont.svg#OpenSans Light') format('svg');
+}
+
+@font-face {
+  font-family: 'Khmer';
+  src: url('/fonts/khmer-webfont.eot?#iefix') format('embedded-opentype'),  url('/fonts/khmer-webfont.woff') format('woff'), url('/fonts/khmer-webfont.ttf')  format('truetype'), url('/fonts/khmer-webfont.svg#Khmer') format('svg');
+}

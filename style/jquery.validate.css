@@ -1,0 +1,36 @@
+/*<![CDATA[*/
+*{ margin: 0; padding: 0; }
+
+div.error {font-style: italic; color: red;}
+
+/** connexion ************************************************************************/
+#connexion div#mail {margin-left:210px;}
+#connexion div#password {margin-left:210px;}
+
+/** inscription **********************************************************************/
+#mail_inscription {}
+#button {padding-top: 15px;}
+
+/** oubli ****************************************************************************/
+#oubli div#mail_oubli {padding-left:245px;}
+#oubli div#password {padding-left:230px;}
+#oubli div#confirm {padding-left:230px;}
+
+/** profil-pass **********************************************************************/
+#profil-pass div#access-password {padding-left:215px;}
+#profil-pass div#password {padding-left:215px;}
+#profil-pass div#confirm {padding-left:215px;}
+
+/** profil-email *********************************************************************/
+#profil-email div#email {padding-left:170px;}
+#profil-email div#button {padding-top: 10px;}
+
+/** validation ***********************************************************************/
+#validation div#password {padding-left: 250px;}
+#validation div#confirm {padding-left: 250px;}
+
+#shoppingInscription div.error {border: none; color: red; float: left; font-style: italic; margin-left: 105px; width: 100%;}
+#shoppingConnection div.error {border: none; color: red; float: left; font-style: italic; margin-left: 105px; width: 100%;}
+#commentEmail div.error {border: none; color: red; float: left; font-style: italic; margin-left: 162px;}
+
+/*]]>*/
